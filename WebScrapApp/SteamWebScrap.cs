@@ -13,7 +13,7 @@ namespace WebScrapApp
         public static string req_URL = "https://steamcommunity.com/market/priceoverview/?appid=730&currency=7&market_hash_name=";
         public static void GetItemLoja()
         {
-            var lines = File.ReadAllLines("C:\\Users\\dede-\\source\\repos\\WebScrapApp\\WebScrapApp\\Links.txt");
+            var lines = File.ReadAllLines("Links.txt");
             HtmlWeb web = new HtmlWeb();
 
             foreach (string line in lines)
